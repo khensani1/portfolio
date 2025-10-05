@@ -1,0 +1,134 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: linear-gradient(135deg, #232526 0%, #f771ba 100%);
+    color: #222;
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 16px rgba(247, 113, 186, 0.15);
+    padding: 32px 0 16px 0;
+    text-align: center;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+nav a {
+    color: #f771ba;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background: #f771ba;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(247, 113, 186, 0.15);
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(247, 113, 186, 0.10);
+    margin-bottom: 32px;
+    padding: 32px;
+    transition: box-shadow 0.2s;
+}
+
+section:hover {
+    box-shadow: 0 8px 32px rgba(247, 113, 186, 0.18);
+}
+
+h1, h2 {
+    color: #f771ba;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+footer {
+    text-align: center;
+    padding: 24px 0;
+    background: rgba(255, 255, 255, 0.95);
+    color: #f771ba;
+    font-weight: 700;
+    font-size: 1rem;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    box-shadow: 0 -4px 16px rgba(247, 113, 186, 0.10);
+    margin-top: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+label {
+    font-weight: 600;
+    color: #f771ba;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #f771ba;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f9f9f9;
+    transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus {
+    border-color: #232526;
+    outline: none;
+}
+
+button[type="submit"] {
+    background: #f771ba;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(247, 113, 186, 0.10);
+}
+
+button[type="submit"]:hover {
+    background: #232526;
+    color: #f771ba;
+    box-shadow: 0 4px 16px rgba(247, 113, 186, 0.18);
+}
